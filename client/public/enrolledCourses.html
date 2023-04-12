@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/client/styles/enrolledCourses.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Courses</title>
+</head>
+<body>
+    <div class="nav">
+        <ul class="nav justify-content-center nav-underline">
+          <li class="nav-item lists">
+            <a
+              class="nav-link text-black text-bolder"
+              aria-current="page"
+              href="/client/public/studentPage.html"
+              >Profile</a
+            >
+          </li>
+          <li class="nav-item lists">
+            <a class="nav-link text-black text-bolder" href="/client/public/enrolledCourses.html">Courses</a>
+          </li>
+          <li class="nav-item lists">
+            <a class="nav-link text-black text-bolder" href="#">LogOut</a>
+          </li>
+        </ul>
+      </div>
+      <div class="heading">
+        <h1>Enrollment History</h1>
+        <div class="line"></div>
+      </div>
+    <div class="table">
+        <table class="table  table-striped">
+            <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Course Name</th>
+                  <th scope="col">Enrollment Date</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Data Structure and Algorithms</td>
+                  <td>24April,2023</td>
+                  <td>Enrolled</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+          </table>
+    </div>
+</body>
+</html>

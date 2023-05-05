@@ -4,9 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/client/styles/admin.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
     <title>AdminLogin</title>
 </head>
 <body>
-    
+ 
+    <div class="nav">
+        <ul class="nav justify-content-center nav-underline">
+          <li class="nav-item lists">
+            <a
+              class="nav-link text-black text-bolder"
+              aria-current="page"
+              href="/client/public/studentPage.html"
+              >Teacher</a>
+          </li>
+          <li class="nav-item lists">
+            <a
+              class="nav-link text-black text-bolder"
+              aria-current="page"
+              href="/client/public/studentPage.html"
+              >Student</a
+            >
+          </li>
+          <li class="nav-item lists">
+            <a class="nav-link text-black text-bolder" href="/client/public/enrolledCourses.html">Courses</a>
+          </li>
+          <li class="nav-item lists">
+            <a class="nav-link text-black text-bolder" href="#">LogOut</a>
+          </li>
+        </ul>
+      </div>
+
+   
+
+<body>
+    <p class="text-center fs-3">Admin Dashboard</p>
+	
+	<div class="container p-5 d-flex justify-content-center align-items-cneter">
+		
+		 <!-- <c:if test="${not empty errorMsg}">
+			<p class="fs-3 text-center text-danger">${errorMsg}</p>
+			<c:remove var="errorMsg" scope="session" />
+		</c:if>
+		<c:if test="${not empty succMsg}">
+			<div class="fs-3 text-center text-success" role="alert">${succMsg}</div>
+			<c:remove var="succMsg" scope="session" />
+		</c:if>
+		 <%
+		DoctorDao dao = new DoctorDao(DBConnect.getConn());
+		%>  -->
+		
+				<div class="card paint-card m-3 w-50" >
+                    <a href="adminTeacher.html">
+					<div class="card-body text-center text-success text-decoration-none">
+						<i class="fas fa-user-md fa-3x"></i><br>
+						<p class="fs-4 text-center">
+							Teacher <br>  
+						</p>
+					</div>
+                </a>
+                </div>
+				
+           <!-- <%
+		       CourseDao dao3 = new CourseDao(DBConnect.getConn());
+		      %>  -->
+
+                <div class="card paint-card m-3 w-50">
+                    <a href="adminCourse.html">
+					<div class="card-body text-center text-success">
+						<i class="fas fa-user-circle fa-3x"></i><br>
+						<p class="fs-4 text-center">
+							Course <br>   
+						</p>
+					</div>
+                </a>
+            </div>
+				
+              <!-- <%
+		       CourseDao dao2 = new CourseDao(DBConnect.getConn());
+		      %>  -->
+              
+			<!-- <div class="col-md-4">
+				<div class="card paint-card">
+					<div class="card-body text-center text-success">
+						<i class="far fa-calendar-check fa-3x"></i><br>
+						<p class="fs-4 text-center">
+							Total Courses <br>    
+						</p>
+					</div>
+				</div>
+			</div> -->
+
+			<!-- <div class="col-md-4 mt-2">
+
+				<div class="card paint-card " data-bs-toggle="modal"
+					data-bs-target="#exampleModal">
+					<div class="card-body text-center text-success">
+						<i class="far fa-calendar-check fa-3x"></i><br>
+						<p class="fs-4 text-center">
+							Specialist <br>   
+						</p>
+					</div>
+				</div>
+
+			</div> -->
+
+		</div>
+	</div>
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="../addSpecialist" method="post">
+
+						<div class="form-group">
+							<label>Enter Specialist Name</label> <input type="text"
+								name="specName" class="form-control">
+						</div>
+						<div class="text-center mt-3">
+							<button type="submit" class="btn btn-primary">Add</button>
+						</div>
+
+					</form>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary"
+						data-bs-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
 </body>
 </html>
